@@ -1,4 +1,5 @@
 import { CardProfile } from "../../components/CardProfile";
+import { SearchPub } from "./Components/SearchPub";
 import * as S from "./styles";
 export function Home() {
   return (
@@ -6,7 +7,7 @@ export function Home() {
       <S.Content>
         <CardProfile />
 
-        
+        <SearchPub />
       </S.Content>
     </S.Container>
   );

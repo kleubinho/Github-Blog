@@ -8,14 +8,18 @@ export const GlobalStyle = createGlobalStyle`
 
     :focus {
         outline: 0;
-        box-shadow: 0 0 0 2px ${(props) => props.theme['base-label']};
+        box-shadow: 0 0 0 2px ${(props) => props.theme["base-label"]};
     }
 }
 
 
 html, body {
     font-family: 'Nunito', sans-serif;
-    background-color: ${props => props.theme['base-background']};
+    background-color: ${(props) => props.theme["base-background"]};
     line-height: 160%;
 }
-`
+
+input, button, textarea {
+    font-family: 'Nunito', sans-serif;
+}
+`;
