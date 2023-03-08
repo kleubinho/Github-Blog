@@ -1,11 +1,12 @@
 import * as S from "./styles";
+import logo from '../../assets/logo.png'
 
 export function Header() {
   return (
     <S.Header>
-      <S.HeaderContent>
-        <S.CardGithub>
-          <S.Avatar src="" alt="" />
+        <S.Logo src={logo} />
+        {/* <S.CardGithub>
+          <S.Avatar src="https://avatars.githubusercontent.com/u/79463086?v=4" alt="" />
           <div>
             <h2>Kleber Henrique</h2>
             <p>
@@ -26,8 +27,7 @@ export function Header() {
               </div>
             </div>
           </div>
-        </S.CardGithub>
-      </S.HeaderContent>
+        </S.CardGithub> */}
     </S.Header>
   );
 }
