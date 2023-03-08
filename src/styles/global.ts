@@ -16,5 +16,6 @@ export const GlobalStyle = createGlobalStyle`
 html, body {
     font-family: 'Nunito', sans-serif;
     background-color: ${props => props.theme['base-background']};
+    line-height: 160%;
 }
 `

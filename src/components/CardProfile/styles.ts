@@ -12,7 +12,43 @@ export const CardProfileGithub = styled.div`
 `;
 
 export const infoProfileGithub = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: ${(props) => props.theme["base-title"]};
+
+  p {
+    color: ${(props) => props.theme["base-text"]};
+  }
+`;
+
+export const NameProfile = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const Icons = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 50px;
+`;
+
+export const Icon = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    color: ${(props) => props.theme["base-subtitle"]};
+  }
+`;
+
+export const LinkGithub = styled.a`
+  display: flex;
+  color: ${(props) => props.theme["blue"]};
+  gap: 5px;
+  font-weight: bold;
+  text-decoration: none;
 `;
 
 export const Avatar = styled.img`

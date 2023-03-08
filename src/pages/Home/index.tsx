@@ -5,6 +5,8 @@ export function Home() {
     <S.Container>
       <S.Content>
         <CardProfile />
+
+        
       </S.Content>
     </S.Container>
   );
