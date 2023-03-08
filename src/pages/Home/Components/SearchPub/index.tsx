@@ -1,3 +1,4 @@
+import { PublicationCard } from '../PublicationCard';
 import * as S from './styles'
 
 export function SearchPub() {

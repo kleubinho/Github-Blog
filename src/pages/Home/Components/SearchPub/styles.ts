@@ -28,10 +28,11 @@ export const Search = styled.input`
     color: ${theme["base-label"]};
     border: 1px solid ${theme["base-border"]};
     &::placeholder {
-        color: ${theme["base-label"]};
+      color: ${theme["base-label"]};
     }
   `}
   font-size: 16px;
   padding: 15px;
   border-radius: 6px;
 `;
+

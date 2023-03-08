@@ -7,6 +7,13 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-    max-width: 1200px;
-    width: 100%;
-`
+  max-width: 1100px;
+  width: 100%;
+`;
+
+export const PubCards = styled.section`
+  margin-block: 60px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+`;
