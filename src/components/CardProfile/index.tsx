@@ -10,7 +10,7 @@ interface CardProps {
 }
 
 
-export function CardProfile({userData}: CardProps) {
+export function CardProfile({ userData }: CardProps) {
   const theme = useTheme();
   return (
     <S.CardProfileGithub>
@@ -26,23 +26,21 @@ export function CardProfile({userData}: CardProps) {
           </S.LinkGithub>
         </S.NameProfile>
         <p>
-          Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu
-          viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat
-          pulvinar vel mass.
+          {userData?.bio}
         </p>
 
         <S.Icons>
           <S.Icon>
             <Ai.AiFillGithub color={theme["base-label"]} />
-            <span>cameronwll</span>
+            <span>{userData?.login}</span>
           </S.Icon>
           <S.Icon>
             <BsFillBuildingFill color={theme["base-label"]} />
-            <span>Rocketseat</span>
+            <span>{userData?.company}</span>
           </S.Icon>
           <S.Icon>
             <HiUsers color={theme["base-label"]} />
-            <span>32 seguidores</span>
+            <span>{userData?.followers} seguidores</span>
           </S.Icon>
         </S.Icons>
       </S.infoProfileGithub>

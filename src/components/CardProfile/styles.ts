@@ -16,6 +16,7 @@ export const infoProfileGithub = styled.div`
   flex-direction: column;
   justify-content: space-between;
   color: ${(props) => props.theme["base-title"]};
+  width: 100%;
 
   p {
     color: ${(props) => props.theme["base-text"]};
