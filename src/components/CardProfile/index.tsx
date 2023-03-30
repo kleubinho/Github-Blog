@@ -3,20 +3,25 @@ import * as Ai from "react-icons/ai";
 import { BsFillBuildingFill } from "react-icons/bs";
 import { HiUsers, HiArrowTopRightOnSquare } from "react-icons/hi2";
 import { useTheme } from "styled-components";
+import { userDataProps } from "../../pages/Home";
 
-export function CardProfile() {
+interface CardProps {
+  userData?: userDataProps
+}
+
+
+export function CardProfile({userData}: CardProps) {
   const theme = useTheme();
   return (
     <S.CardProfileGithub>
       <S.Avatar
-        src="https://avatars.githubusercontent.com/u/79463086?v=4"
-        alt=""
+        src={userData?.avatar_url}
       />
       <S.infoProfileGithub>
         <S.NameProfile>
-          <h2>Kleber Henrique</h2>
+          <h2>{userData?.name}</h2>
 
-          <S.LinkGithub href="#">
+          <S.LinkGithub href={userData?.url} target={'_blank'}>
             GITHUB<HiArrowTopRightOnSquare size={20} />
           </S.LinkGithub>
         </S.NameProfile>
